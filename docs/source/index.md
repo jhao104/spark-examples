@@ -34,13 +34,6 @@ base/installation-on-windows
 base/installation-on-linux
 ```
 
-```{toctree}
-:maxdepth: 1
-:caption: Topic Areas
-
-tutorials/get-started
-```
-
 ## What is Apache Spark?
 
 Apache Spark is an Open source analytical processing engine for large scale powerful distributed data processing and
