@@ -1,4 +1,4 @@
-sphinx-design
-sphinx-book-theme
-sphinx-copybutton
-myst-parser
+sphinx-design==0.0.12
+sphinx-book-theme==0.1.6
+sphinx-copybutton==0.4.0
+myst-parser==0.15.2
