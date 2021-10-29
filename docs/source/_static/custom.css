@@ -1,0 +1,13 @@
+h1 {
+    color: #003B71 !important;
+    font-size: 30px !important;
+}
+
+h2 {
+    color: #003B71 !important;
+    font-size: 25px;
+}
+
+figure.center-figure {
+    text-align: center;
+}
