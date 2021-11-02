@@ -10,7 +10,7 @@ title: Spark By Examples
 :::{grid-item}
 :columns: 4
 
-```{image} ./_static/spark.svg
+```{image} ./_static/apachespark.svg
 :width: 150px
 ```
 :::
@@ -28,10 +28,18 @@ Spark By Examples | Learn Spark Tutorial with Examples.
 
 ```{toctree}
 :maxdepth: 1
-:caption: Spark Tutorial
+:caption: Spark Base
 
 base/installation-on-windows
 base/installation-on-linux
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Spark RDD
+
+spark-rdd/summary
+spark-rdd/parallelize
 ```
 
 ## What is Apache Spark?

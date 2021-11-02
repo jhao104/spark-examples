@@ -110,7 +110,7 @@ myst_enable_extensions = [
 html_theme = 'sphinx_book_theme'
 html_logo = "_static/logo-wide.svg"
 html_title = "Spark Examples"
-html_favicon = "_static/spark.svg"
+html_favicon = "_static/apachespark.svg"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
