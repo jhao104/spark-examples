@@ -117,7 +117,7 @@ html_favicon = "_static/apachespark.svg"
 # documentation.
 #
 html_theme_options = {
-    "repository_url": "https://github.com/jhao104/spider",
+    "repository_url": "https://github.com/jhao104/spark-examples",
     "use_repository_button": True,
     "use_issues_button": True,
     "use_edit_page_button": True,

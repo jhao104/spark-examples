@@ -38,7 +38,7 @@ base/installation-on-linux
 :maxdepth: 1
 :caption: Spark RDD
 
-spark-rdd/summary
+spark-rdd/spark-rdd-summary
 spark-rdd/parallelize
 ```
 
