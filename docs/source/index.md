@@ -33,6 +33,7 @@ Spark By Examples | Learn Spark Tutorial with Examples.
 base/installation-on-windows
 base/installation-on-linux
 base/spark-on-intelliJ
+base/spark-session
 ```
 
 ```{toctree}
