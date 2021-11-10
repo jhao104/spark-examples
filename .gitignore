@@ -1,4 +1,6 @@
 *.class
 *.log
 docs/build/*
+project/target/*
+target/*
 .idea/*
