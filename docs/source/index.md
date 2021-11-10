@@ -34,6 +34,7 @@ base/installation-on-windows
 base/installation-on-linux
 base/spark-on-intelliJ
 base/spark-session
+base/spark-context
 ```
 
 ```{toctree}
