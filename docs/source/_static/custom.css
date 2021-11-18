@@ -11,3 +11,7 @@ h2 {
 figure.center-figure {
     text-align: center;
 }
+
+p {
+    font-size: 0.9em; !important;
+}
