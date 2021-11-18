@@ -14,7 +14,6 @@ object SparkContextExample {
     println("Spark application unique identifier: " + sc.applicationId)
     println("spark.app.name: " + sc.appName)
     println("spark.master: " + sc.master)
-    println("spark.master: " + sc.setLogLevel())
   }
 
 }
