@@ -13,8 +13,10 @@ sc.parallelize(seq: Seq[T], numSlices: Int)
 
 * `sc`： SparkContext 对象
 * `seq`：集合对象
-* `numSlices`：可选参数，创建数据集的分片数。默认情况下，Spark会根据集群的状况来自动设定slices的数目
+* `numSlices`：可选参数，创建数据集的分区数。
 
+`numSlices`是parallelize的一个重要参数。Spark将为集群的每个分区运行一个任务。默认情况下，
+Spark会根据集群情况自动设置分区数。但是，你也可以手动设置它（例如 `sc.parallelize(data,10)`）。
 
 ## 示例
 
