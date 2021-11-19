@@ -2,9 +2,9 @@
 
 Parallelize是一种在现有集合（例如数组）上创建RDD的方法。集合中的元素将被复制成为一个分布式数据集，然后我们可以在该数据集上进行并行操作。
 
-Parallelize是Spark中创建RDD的三种方法之一，另外两种方法是:
+Parallelize是Spark中创建RDD的三种方式之一，另外两种方法是:
 * 从外部数据源创建，如本地文件系统、HDFS等等。
-* 从现有RDD转换而来。
+* 从现有RDD、DataSet、DataFrame转换而来。
 
 **用法**:
 ```scala
