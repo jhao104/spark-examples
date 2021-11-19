@@ -42,7 +42,8 @@ base/spark-context
 :caption: Spark RDD
 
 spark-rdd/spark-rdd-summary
-Spark RDD - Parallelize <spark-rdd/spark-rdd-parallelize>
+Spark RDD — 创建RDD <spark-rdd/spark-rdd-create>
+Spark RDD — Parallelize <spark-rdd/spark-rdd-parallelize>
 ```
 
 ## What is Apache Spark?
