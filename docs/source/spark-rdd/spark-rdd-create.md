@@ -29,11 +29,13 @@ val rdd = sc.parallelize(List(1,2,3,4,5),3)  // 指定分片数 3
 
 Spark可以从所有Hadoop支持的存储源创建RDD，包括本地文件系统、HDFS、Cassandra、HBase、Amazon S3等等。它支持文本格式、SequenceFile和其他所有Hadoop InputFormat。
 
-使用SparkContext的 `textFile` 方法创建文本文件RDD。此方法接收文件URI（本地文件路径或 `hdfs://` ， `s3a://` 等URI）作为参数，按行读取创建RDD。下面是一个调用示例：
+使用SparkContext的 `textFile()` 方法创建文本文件RDD。此方法接收文件URI（本地文件路径或 `hdfs://` ， `s3a://` 等URI）作为参数，按行读取创建RDD。下面是一个调用示例：
 
 ```scala
 val rdd = sc.textFile("/path/textFile.txt")  // 文件路径
 ```
+
+关于 `textFile()` 的更多用法，详见 [Spark RDD - textFile](spark-rdd-textFile.md)。
 
 (create-rdd-from-rdd)=
 ## 由RDD转换创建
