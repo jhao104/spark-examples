@@ -2,15 +2,14 @@
 
 RDD(Resilient Distributed Dataset)弹性分布式数据集是Spark中最重要的概念之一。它是一个只读的数据集合，之所以称它为弹性的，是因为它们能够在节点发生故障时根据血缘关系重新计算。
 
-通常有下面四种创建RDD的方式:
+通常有下面三种创建RDD的方式:
 
-* [Parallelize数据集合创建](create-rdd-from-parallelize)
-* [加载外部数据源创建](create-rdd-from-text-file)
-* [由RDD转换创建](create-rdd-from-rdd)
-* [由DataFrame和DataSet转换创建](create-rdd-from-data-)
+* [Parallelize集合创建](create-rdd-from-parallelize)：接收一个已存在的Scala集合，然后进行各种并行计算。
+* [加载外部数据源创建](create-rdd-from-text-file)：外部数据源可以是本地文件或Hadoop文件系统的HDFS等。
+* 由RDD、DataFrame和DataSet转换创建。
 
 (create-rdd-from-parallelize)=
-## Parallelize数据集合创建
+## Parallelize集合创建
 
 可以将已存在的数据集合传递给SparkContext的 `parallelize` 方法创建RDD，详见[Spark Parallelize 方法](spark-rdd-parallelize.md)。
 
@@ -18,7 +17,7 @@ RDD(Resilient Distributed Dataset)弹性分布式数据集是Spark中最重要�
 ```scala
 val rdd = sc.parallelize(Array(1,2,3,4,5))
 ```
-
+    
 * 指定分片数:
 ```scala
 val rdd = sc.parallelize(List(1,2,3,4,5),3)  // 指定分片数 3

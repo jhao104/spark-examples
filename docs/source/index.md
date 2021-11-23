@@ -45,6 +45,7 @@ spark-rdd/spark-rdd-summary
 Spark RDD — 创建RDD <spark-rdd/spark-rdd-create>
 Spark RDD — Parallelize <spark-rdd/spark-rdd-parallelize>
 Spark RDD — textFile <spark-rdd/spark-rdd-textFile>
+Spark RDD — 转换算子 <spark-rdd/spark-rdd-transformations>
 ```
 
 ## What is Apache Spark?
