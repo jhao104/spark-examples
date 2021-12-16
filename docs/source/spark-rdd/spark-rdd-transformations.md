@@ -233,22 +233,24 @@ rdd.reduceByKey(_+_).collect.foreach(println)
 (c,9)
 ```
 
-### reduceByKey
+### sortByKey
 
-`reduceByKey` 在 *RDD[K,V]* 上调用，返回一个 *RDD[K,V]* ，使用指定的reduce函数，将相同key的值聚合到一起。代码示例：
+`sortByKey` 在 *RDD[K,V]* 上调用，返回一个 *RDD[K,V]* ，根据key进行排序，默认为 `ascending: Boolean = true` (”升序“)。代码示例：
 
 ```scala
-val rdd = sc.parallelize(Seq(("a", 1), ("b", 2), ("b", 3), ("c", 4), ("c", 5), ("d", 6)))
-rdd.reduceByKey(_+_).collect.foreach(println)
+val rdd = sc.parallelize(Seq(("a", 1), ("c", 2), ("b", 3), ("f", 4), ("e", 5), ("d", 6)))
+rdd.sortByKey().collect.foreach(println)
 ```
 
 上面代码将输出：
 
 ```shell
-(d,6)
 (a,1)
-(b,5)
-(c,9)
+(b,3)
+(c,2)
+(d,6)
+(e,5)
+(f,4)
 ```
 
 ### join
