@@ -1,0 +1,25 @@
+{% extends "!layout.html" %}
+
+{%- block extrahead %}
+{{ super() }}
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+
+<script>
+
+    document.getElementsByTagName("footer")[0].remove()
+
+    let commentDiv = document.createElement('div');
+    commentDiv.setAttribute('id', 'comments')
+    document.getElementsByTagName("main")[0].appendChild(commentDiv)
+    new Valine({
+        el: '#comments',
+        appId: 'uKqiktz15IA53cQjOyxDN9C5-MdYXbMMI',
+        appKey: 'M9S0XCnwUBQbrTaCUgvbVvQx'
+    })
+</script>
+
+{% endblock %}

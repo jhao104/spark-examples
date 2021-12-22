@@ -121,7 +121,7 @@ html_theme_options = {
     "use_repository_button": True,
     "use_issues_button": True,
     "use_edit_page_button": True,
-    "extra_navbar": "",
+#     "extra_navbar": "",
     "logo_only": True,
     "show_toc_level": 2,
     "use_download_button": True
@@ -145,7 +145,7 @@ html_sidebars = {
         "sidebar-logo.html",
         "search-field.html",
         "sbt-sidebar-nav.html",
-        "sbt-sidebar-footer.html"
+#         "sbt-sidebar-footer.html"
     ]
 }
 

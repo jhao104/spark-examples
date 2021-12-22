@@ -47,6 +47,7 @@ Spark RDD — Parallelize <spark-rdd/spark-rdd-parallelize>
 Spark RDD — textFile <spark-rdd/spark-rdd-textFile>
 Spark RDD — 转换算子 <spark-rdd/spark-rdd-transformations>
 Spark RDD — 行动算子 <spark-rdd/spark-rdd-actions>
+Spark RDD — DAG <spark-rdd/spark-rdd-stage>
 ```
 
 ## What is Apache Spark?
