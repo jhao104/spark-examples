@@ -9,12 +9,10 @@
 {{ super() }}
 
 <script>
-
-    document.getElementsByTagName("footer")[0].remove()
-
     let commentDiv = document.createElement('div');
+    commentDiv.style = "padding-top: 30px"
     commentDiv.setAttribute('id', 'comments')
-    document.getElementsByTagName("main")[0].appendChild(commentDiv)
+    document.getElementById("main-content").lastElementChild.appendChild(commentDiv)
     new Valine({
         el: '#comments',
         appId: 'uKqiktz15IA53cQjOyxDN9C5-MdYXbMMI',
