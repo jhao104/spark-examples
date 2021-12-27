@@ -23,7 +23,7 @@ Windows上安装Apache Spark需要Java 8或更高版本，你可以从
 width: 70%
 figclass: center-figure
 alt: Spark Download Page
-name: spark-download-page
+name: spark-download-page-win
 ---
 ApacheSpark下载页
 ```
