@@ -1,6 +1,18 @@
-# Spark RDD — DAG
+# Spark RDD — Stage
 
-Spark处理数据时会根据RDD的依赖关系构建一个含有Stage的有向无环图(DAG)， 在运行时按照步骤执行DAG中的Stage。
+Spark Stage是计算多个任务的物理执行单元。 Spark处理数据时会根据RDD的依赖关系构建一个有向无环图(DAG)，然后根据DAG划分Stage, 在运行时按照步骤执行DAG中的Stage。
+
+## DAG
+
+有向无环图：DAG(Directed Acyclic Graph)是什么？:
+
+* **Directed**：节点间由边连接在一起，连接顺序由RDD上的调用顺序决定。
+* **Acyclic**：节点不能连接成环；即如果操作或转换一旦完成，则无法还原回其原始值。
+* **Graph**：Graph指由边和点排列形成的特定图形。点为RDD，边为RDD上调用的算子。
+
+
+DAGScheduler将Stage划分为多个任务，然后将Stage信息传递给集群管理器，集群管理器触发任务调度器运行任务。
+Spark驱动程序将逻辑执行计划转换为物理执行计划。Spark作业以流水线方法执行。
 
 (word-count-example)=
 ## WordCount例子
