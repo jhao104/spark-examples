@@ -49,6 +49,7 @@ Spark RDD — 转换算子 <spark-rdd/spark-rdd-transformations>
 Spark RDD — 行动算子 <spark-rdd/spark-rdd-actions>
 Spark RDD — DAG <spark-rdd/spark-rdd-stage>
 Spark RDD — 持久化 <spark-rdd/spark-rdd-cache>
+Spark RDD — 共享变量 <spark/spark-shared-variable>
 ```
 
 ## What is Apache Spark?
